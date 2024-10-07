@@ -32,7 +32,7 @@ async function getRandomUser() {
     addData(newUser);
 }
 
-// Double everyoines money
+// Double eveyrones money with MAP() and ...spreadOperator
 function doubleMoney() {
     // We are taking data, a GLOBAL SCOPE var 
     data = data.map((user) => {
@@ -40,6 +40,32 @@ function doubleMoney() {
     });
 
     updateDOM();
+}
+
+// SORT() users by riches ()
+function sortByRichest() {
+    // We need to remember that we need to take the property that we will use to sort
+    data.sort((a, b) => b.money - a.money);
+    updateDOM();
+}
+
+//Function only millionaires
+function showMillionaires() {
+    // We simply take the users and for each user we evaluate each one
+    // to check if it is a millionaire
+    data = data.filter(user => user.money > 1000000);
+    updateDOM();
+}
+
+// Calculate the total wealth
+function calculateWealth() {
+    const wealth = data.reduce((acc, user) => (acc += user.money), 0)
+    console.log(`Wealth calculated ${wealth}`);
+
+    // We add the total into the site
+    const wealthEl = document.createElement('dive');
+    wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(wealth)}</strong>`;
+    main.appendChild(wealthEl);
 }
 
 // Add new obj to data arr
@@ -71,7 +97,8 @@ function updateDOM(providedData = data) {
     });
 }
 
-// Format number as money - https://stackoverflow.com/questions/149055/hot-to-format-numbers-as-currency-string
+// Format number as money - 
+// https://stackoverflow.com/questions/149055/hot-to-format-numbers-as-currency-string
 function formatMoney(number) {
     // Regular expression to set money type
     return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g,'$&,');
@@ -80,3 +107,7 @@ function formatMoney(number) {
 // Event listeners
 addUserBtn.addEventListener('click', getRandomUser);
 doubleBtn.addEventListener('click', doubleMoney);
+sortBtn.addEventListener('click', sortByRichest);
+showMillionairesBtn.addEventListener('click', showMillionaires);
+calculateWealthBtn.addEventListener('click', calculateWealth);
+

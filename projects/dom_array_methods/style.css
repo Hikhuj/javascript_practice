@@ -71,13 +71,13 @@ h2 {
 }
 
 h3 {
-    background-color: #fff;
-    border-bottom: 1px solid #111;
-    padding: 10px;
+    color: #111;
+    border-top: 1px solid #111;
+    padding: 13px 0 13px 0;
     display: flex;
     justify-content: space-between;
-    font-weight: 300;
-    margin: 0 0 20px;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
 
 .person {

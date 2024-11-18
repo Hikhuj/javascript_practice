@@ -1,90 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudfire.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-    <title>My Landing Page</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user">
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact me</a></li>
-        </ul>
-    </nav>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>My Landing Page</title>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav>
+            <div class="logo">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <button id="toggle" class="toggle">
-            <i class="fa fa-bars fa-2x"></i>
-        </button>
-
-        <h1>My Landing page</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tenetur, amet!
-        </p>
-
-        <button id="open" class="cta-btn">Sign Up</button>
-    </header>
-
-    <div class="container">
-        <h2>What is this landing page about?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada sed purus vel lobortis. Fusce leo lacus, fringilla sed enim ut, dapibus gravida massa. Sed id tortor in nulla vestibulum vulputate et ac turpis. Nullam eu ipsum ut eros rutrum tincidunt ac non tellus. Sed sagittis imperdiet lorem. Donec eget venenatis mi. Phasellus quis massa quis lorem dapibus facilisis sit amet posuere erat. Sed mollis at erat eget porttitor. Nulla aliquam non enim id placerat. Sed felis massa, lacinia vel tortor ac, pellentesque tincidunt tortor. Etiam vulputate, velit id ultrices elementum, libero lorem egestas nulla, id mattis elit nunc vitae justo. Pellentesque turpis nisi, ultrices et porttitor sit amet, eleifend et ante.</p>
-        <p>Proin condimentum tincidunt rutrum. Integer interdum enim eget nulla feugiat gravida. Nam eu odio tempor enim aliquam elementum. Mauris cursus risus id pulvinar sollicitudin. Donec quam ex, iaculis in magna eu, pharetra placerat enim. Duis dignissim malesuada lectus. Vivamus gravida lobortis felis ac consectetur. Nullam id euismod tellus, vel cursus lectus. Sed elementum pulvinar risus. Vivamus ac tellus ut erat fringilla pulvinar in a mi. Ut velit nisi, mollis at facilisis ut, semper tempor justo. Sed eu lacus et enim efficitur imperdiet at ut orci. Integer volutpat lorem est, eu ornare mi tincidunt a. Sed quis pharetra odio. Mauris at vulputate quam.</p>
-
-        <h2>Tell me more</h2>
-        <p>Etiam nunc velit, porta aliquet auctor non, dictum at risus. Praesent porttitor et augue vitae pretium. Sed purus nisi, dapibus et fringilla id, consequat ac dui. Phasellus eleifend vehicula augue nec aliquet. Integer tempor consequat justo ut pretium. Maecenas dapibus mi in risus tristique eleifend. Sed ut lorem ut ipsum suscipit tristique at non eros. Maecenas in fringilla ligula, ut condimentum massa. Phasellus blandit viverra ante eu volutpat.</p>
-
-        <h2>Benefits</h2>
-        <ul>
-            <li>Lifetime Access</li>
-            <li>30 Day Money Back</li>
-            <li>Tailored Customer Support</li>
-        </ul>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal-container-" id="modal">
-        <div class="modal">
-            <button class="close-btn" id="close">
-                <i class="fa fa-times"></i>
+        <header>
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
             </button>
-            <div class="modal-header">
-                <h3>Sign Up</h3>
-            </div>
-            <div class="modal-content">
-                <p>Register with us to get offers, support and more</p>
-                <form class="modal-form">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter Email" class="form-input">
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter Password" class="form-input">
-                    </div>
-                    <div>
-                        <label for="password2">Password</label>
-                        <input type="password2" id="password2" placeholder="Confirm Password" class="form-input">
-                    </div>
-                    <input type="submit" value="Submit" class="submit-btn">
-                </form>
+
+            <h1>My Landing Page</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</p>
+
+            <button class="cta-btn" id="open">Sign up</button>
+        </header>
+
+        <div class="container">
+            <h2>What is this landing page about?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc mauris, ullamcorper vitae fermentum et, sodales dictum arcu. Nunc porta metus id sodales tristique. Nam sapien risus, laoreet non neque id, ultricies varius nibh. Fusce iaculis aliquam nulla vel pretium. Integer vestibulum, leo at porta dapibus, sem libero ultrices magna, eget tincidunt ipsum tortor quis felis. Integer facilisis mollis quam in pretium. Pellentesque eget tortor tincidunt, porta sem non, laoreet justo. Sed egestas malesuada leo, quis porta eros convallis at. Duis id porta arcu, at dictum lacus. Proin pretium auctor nisl non maximus. Pellentesque magna tortor, rutrum sit amet feugiat nec, ornare scelerisque ex. Quisque vel semper nulla, in ultrices nibh. Proin imperdiet at enim et rutrum.</p>
+            
+            <h2>Tell me more</h2>
+            <p>Integer nec diam lobortis, tristique est ut, pharetra risus. Morbi volutpat est sed dui gravida, ut consectetur urna interdum. Integer lacinia aliquet dolor sit amet placerat. In eget hendrerit magna, quis rhoncus lectus. Proin nec magna convallis, consectetur libero eget, tristique ante. Phasellus in purus turpis. Mauris sit amet orci ut turpis tristique ullamcorper non ac leo. Nam posuere, quam id tincidunt tincidunt, tortor odio luctus augue, vitae pulvinar neque lacus et dolor. Aliquam vitae libero non nunc tempor aliquet. Integer tempus tempor blandit. Mauris pellentesque leo ac felis gravida, ut dapibus enim commodo. Nam et convallis nulla, vel viverra neque. Phasellus tempus urna est, sed eleifend velit aliquam sed. Sed malesuada, augue quis pharetra bibendum, nisi erat luctus eros, ultricies fermentum lorem ex a sem. Etiam cursus nulla id ligula tincidunt consequat. Vestibulum sit amet feugiat justo.
+            </p>
+
+            <h2>Benefits</h2>
+            <ul>
+                <li>Lifetime access</li>
+                <li>20 Day Money Back</li>
+                <li>Tailored Customer Support</li>
+            </ul>
+
+            <p>Etiam condimentum nisi sed sapien venenatis lobortis. Morbi quis nibh turpis. Integer eleifend leo justo, vel ultricies lorem porta euismod. Sed nec massa urna. Aenean at odio consequat, volutpat tortor et, congue arcu. Aliquam eget dapibus justo. Ut augue augue, hendrerit id aliquam sit amet, semper id felis. Mauris quis volutpat lacus.</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <h3>Sign up</h3>
+                </div>
+                <div class="modal-content">
+                    <p>Register with us to get offers, support and more</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Enter Email" class="form-input">
+                        </div>
+                        <div>
+                            <label for="password">Name</label>
+                            <input type="password" id="password" placeholder="Enter password" class="form-input">
+                        </div>
+                        <div>
+                            <label for="password2">Name</label>
+                            <input type="password" id="password2" placeholder="Confirm password" class="form-input">
+                        </div>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
